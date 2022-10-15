@@ -1,9 +1,25 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a:hover {
+  opacity: .6;
+  transition: opacity .1s linear;
+}
+
+.rotation-ico {
+  transform: rotate(360deg);
+  animation: rotation 20s linear infinite;
+}
+
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -20,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: left;
+  overflow: hidden;
 }
 
 .logo {
@@ -176,6 +193,80 @@
   font-weight: normal;
 }
 
+/* Блок techniques */
+.techniques {
+  margin: 100px auto 0;
+  width: 80%;
+}
+
+.cards {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 920px;
+}
+
+.cards__item {
+  padding-right: 100px;
+  width: 240px;
+}
+
+.cards__item:nth-child(3n) {
+  padding-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  padding: 60px 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cards__description {
+  margin: 0;
+  padding-top: 16px;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Блок video */
+.video {
+  padding-top: 100px;
+}
+
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -50px;
+}
+
+.video__iframe {
+  margin-right: 20px;
+}
+
+.video__iframe:last-of-type {
+  margin-right: 0;
+}
+
+/* Блок oakley */
+.oakley {
+  background-color: #f2f2f2;
+  padding-top: 160px;
+}
+
+/* Блок feynman */
 .feynman {
   background-color: #f2f2f2;
   background-image: url("../images/feynman.png");
@@ -184,6 +275,7 @@
   background-position: bottom left;
   min-height: 890px;
   position: relative;
+  padding-top: 100px;
 }
 
 .feynman__title {
@@ -217,6 +309,80 @@
   font-weight: normal;
 }
 
+/* Блок khan */
+.khan {
+  padding-top: 100px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.khan__quote {
+  margin: 0;
+  width: 790px;
+  padding-top: 50px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin: 0;
+  padding-top: 36px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.khan__quote-author-subline {
+  margin: 0;
+  padding-top: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  padding-top: 60px ;
+  display: flex;
+
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  background-image: url(../images/khan-book.jpg);
+  background-size: cover;
+
+}
+
+.khan__buy-link {
+  padding-left: 48px;
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* Блок kaufman */
 .kaufman {
   background-color: #1f1f1f;
   position: relative;
@@ -251,12 +417,37 @@
   z-index: -1;
 }
 
+/* Блок resources */
+.resources {
+  padding: 100px 0 217px;
+}
+
+.resources__logo-zone {
+  width: 1100px;
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resources__link {
+  width: 270px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+.resources__logo {
+
+}
+
+/* Блок footer */
 .footer {
   min-height: 350px;
   box-sizing: border-box;
   background-color: #1f1f1f;
   padding: 60px 0 40px;
   display: flex;
+  overflow: hidden;
 }
 
 .footer__columns {
