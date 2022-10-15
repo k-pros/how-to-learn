@@ -7,10 +7,7 @@
   }
 }
 
-a:hover {
-  opacity: .6;
-  transition: opacity .1s linear;
-}
+
 
 .rotation-ico {
   transform: rotate(360deg);
@@ -436,9 +433,6 @@ a:hover {
   justify-content: center;
 }
 
-.resources__logo {
-
-}
 
 /* Блок footer */
 .footer {
@@ -504,4 +498,12 @@ a:hover {
   padding-right: 10px;
   width: 16px;
   height: 16px;
+}
+
+.link-hover {
+  transition: opacity .2s ease-in-out;
+}
+
+.link-hover:hover {
+  opacity: .6;
 }
