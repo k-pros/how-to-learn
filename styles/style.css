@@ -7,9 +7,7 @@
   }
 }
 
-
-
-.rotation-ico {
+.rotation {
   transform: rotate(360deg);
   animation: rotation 20s linear infinite;
 }
@@ -198,6 +196,7 @@
 
 .cards {
   margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -207,6 +206,7 @@
 .cards__item {
   padding-right: 100px;
   width: 240px;
+  list-style: none;
 }
 
 .cards__item:nth-child(3n) {
@@ -216,7 +216,7 @@
 .cards__image {
   width: 160px;
   height: 160px;
-  padding: 60px 40px 43px;
+  margin: 60px 40px 43px;
   border-radius: 50%;
 }
 
