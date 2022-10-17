@@ -209,9 +209,7 @@
   list-style: none;
 }
 
-.cards__item:nth-child(3n) {
-  padding-right: 0;
-}
+
 
 .cards__image {
   width: 160px;
@@ -249,12 +247,8 @@
   bottom: -50px;
 }
 
-.video__iframe {
+.video__iframe:first-of-type {
   margin-right: 20px;
-}
-
-.video__iframe:last-of-type {
-  margin-right: 0;
 }
 
 /* Блок oakley */
